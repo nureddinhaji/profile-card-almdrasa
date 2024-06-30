@@ -190,6 +190,9 @@ main.cards {
     width: 3.5rem;
     height: 3.5rem;
     fill: var(--main-color);
+    transition: 0.3s;
 }
-
+.card__svg:hover {
+    opacity: .7;
+}
 /* ---End Footer Style--- */

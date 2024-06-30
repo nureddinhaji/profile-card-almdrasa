@@ -1,0 +1,30 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+ul, ol {
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+}
+
+/* Global CSS */
+body {
+    font-size: 1.6rem;
+}
+

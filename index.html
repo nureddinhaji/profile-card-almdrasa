@@ -1,36 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nureddin Haji profile card with socail links.">
-    <title>Nureddin Haji Profile Card</title>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Nureddin Haji profile card with socail links."
+        />
+        <title>Nureddin Haji Profile Card</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main class="container">
-        <article class="card">
-            <header class="card__header">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap"
+            rel="stylesheet"
+        />
 
-            </header>
-            <section class="card__body">
-                <img src="images/myAvatar.png" alt="My avatar" class="card__avatar">
-                <h1 class="card__title">Nureddin Haji</h1>
-                <p class="card__job">MD & Front-End Developer</p>
-                <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit molestias, dignissimos quos consequatur esse cumque.</p>
-            </section>
-            <footer class="card__footer">
-                <div class="card__links">
-                    <a href="https://github.com/nureddinhaji" aria-label="Follow me on GitHub" class="card__link"></a>
-                    <a href="https://www.linkedin.com/in/nureddinhaji" aria-label="Follow me on Linkedin" class="card__link"></a>
-                    <a href="https://twitter.com/nureddinhaji" aria-label="Follow me on Twitter" class="card__link"></a>
-                    <a href="https://www.facebook.com/nureddinhaji" aria-label="Follow me on Facebook" class="card__link"></a>
-                    <a href="https://t.me/nureddinhaji" aria-label="Follow me on Telegram" class="card__link"></a>
-                    <a href="https://codepen.io/nureddinhaji" aria-label="Follow me on Codepen" class="card__link"></a>
-                </div>
-            </footer>
-        </article>
-    </main>
-</body>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="toggle">
+                <input
+                    class="lang__input"
+                    type="checkbox"
+                    name="card-lang"
+                    id="card-lang"
+                    hidden
+                />
+                <p>En</p>
+                <label class="lang__label" for="card-lang"></label>
+                <p>Ar</p>
+            </div>
+            <main class="cards">
+                <article class="card card--en" lang="en" dir="ltr">
+                    <header class="card__header"></header>
+                    <section class="card__body">
+                        <img
+                            src="images/myAvatar.png"
+                            alt="My avatar"
+                            class="card__avatar"
+                        />
+                        <h1 class="card__title">Nureddin Haji</h1>
+                        <p class="card__job">MD & Front-End Developer</p>
+                        <p class="card__description">An M.D. with a passion for technology, specializing in front-end development and creating engaging content across platforms like Facebook, Twitter, LinkedIn, and Telegram. 
+                        </p>
+                    </section>
+                    <footer class="card__footer">
+                        <div class="card__links">
+                            <a
+                                href="https://github.com/nureddinhaji"
+                                aria-label="Follow me on GitHub"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewbox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm-4.5 19.6c-.4 0-.5-.2-.5-.4V17c0-.7-.3-1.2-.6-1.5 1.8-.2 3.7-.8 3.7-4a3 3 0 0 0-.8-2c0-.3.3-1-.1-2.2 0 0-.7-.2-2.2.8a7.6 7.6 0 0 0-4 0c-1.5-1-2.2-.8-2.2-.8-.4 1.1-.2 2 0 2.1a3 3 0 0 0-.9 2.2c0 3 1.9 3.7 3.6 4-.2.1-.4.5-.5 1-.4.2-1.6.6-2.3-.7 0 0-.4-.7-1.2-.8 0 0-.8 0 0 .5 0 0 .4.2.8 1.2 0 0 .5 1.4 2.7 1v1.4c0 .2-.1.5-.5.4a8 8 0 1 1 5 0z"
+                                    /></svg
+                            ></a>
+    
+                            <a
+                                href="https://www.linkedin.com/in/nureddinhaji"
+                                aria-label="Follow me on Linkedin"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewbox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.7c-1 0-1.8-.8-1.8-1.7s.8-1.8 1.8-1.8S8.3 4 8.3 5s-.8 1.7-1.8 1.7zM20 19h-3v-5.6c0-3.4-4-3.1-4 0V19h-3V8h3v1.8c1.4-2.6 7-2.8 7 2.4V19z"
+                                    /></svg
+                            ></a>
+    
+                            <a
+                                href="https://twitter.com/nureddinhaji"
+                                aria-label="Follow me on Twitter"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewbox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm-.1 9.2a9.3 9.3 0 0 1-14.4 8.3c1.7.2 3.5-.3 4.9-1.3-1.5 0-2.7-1-3.1-2.3h1.5A3.3 3.3 0 0 1 5 10.5c.5.2 1 .4 1.5.4-1.4-1-1.8-3-1-4.4 1.6 2 4 3.3 6.8 3.4A3.3 3.3 0 0 1 18 7c.7-.1 1.4-.4 2-.8-.2.8-.7 1.5-1.4 1.9.7-.1 1.3-.3 1.9-.6-.4.7-1 1.3-1.6 1.7z"
+                                    /></svg
+                            ></a>
+                            <a
+                                href="https://www.facebook.com/nureddinhaji"
+                                aria-label="Follow me on Facebook"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewbox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm-3 7h-2c-.5 0-1 .3-1 .9V9h3l-.2 3H13v8h-3v-8H8V9h2V7c0-2 1-3 3.5-3H16v3z"
+                                    /></svg
+                            ></a>
+                            <a
+                                href="https://t.me/nureddinhaji"
+                                aria-label="Follow me on Telegram"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewbox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M19 24H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h14a5 5 0 0 1 5 5v14a5 5 0 0 1-5 5Zm-2.7-5.1h.7c.2 0 .4-.3.5-.5L20 6.3c0-.2 0-.4-.2-.5a.5.5 0 0 0-.5-.1l-15 5.6c-.2 0-.3.3-.3.5s.2.4.4.5L8 13.4l1.5 4.4c0 .2.2.4.4.4l.6-.1 2-2 3.8 2.8ZM8.9 13l1.1 3.7.3-2.4L17 8.3V8h-.3L9 13Z"
+                                    /></svg
+                            ></a>
+                            <a
+                                href="https://codepen.io/nureddinhaji"
+                                aria-label="Follow me on Codepen"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect height="512" rx="15%" width="512" />
+                                    <g
+                                        fill="none"
+                                        stroke="#e6e6e6"
+                                        stroke-linejoin="round"
+                                        stroke-width="33"
+                                    >
+                                        <path
+                                            d="M81 198v116l175 117 175-117V198L256 81z"
+                                        />
+                                        <path
+                                            d="m81 198 175 116 175-116M256 81v117"
+                                        />
+                                        <path
+                                            d="m81 314 175-116 175 116M256 431V314"
+                                        />
+                                    </g></svg
+                            ></a>
+                        </div>
+                    </footer>
+                </article>
+                <article class="card card--ar" lang="ar" dir="rtl">
+                    <header class="card__header"></header>
+                    <section class="card__body">
+                        <img
+                            src="images/myAvatar.png"
+                            alt="My avatar"
+                            class="card__avatar"
+                        />
+                        <h1 class="card__title">نورالدين حاجي</h1>
+                        <p class="card__job">طبيب & مطور واجهات أمامية</p>
+                        <p class="card__description">
+                            طبيب بشري، شغوف بالتكنولوجيا وتطوير الويب، متخصص في تطوير الواجهات الأمامية، وإنشاء محتوى تقني ومشاركته على مدونته وحساباته على منصات التواصل المختلفة مثل: فيسبوك، وتويتر، ولينكد إن، وتلغرام.
+                        </p>
+                    </section>
+                    <footer class="card__footer">
+                        <div class="card__links">
+                            <a
+                                href="https://github.com/nureddinhaji"
+                                aria-label="Follow me on GitHub"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewbox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm-4.5 19.6c-.4 0-.5-.2-.5-.4V17c0-.7-.3-1.2-.6-1.5 1.8-.2 3.7-.8 3.7-4a3 3 0 0 0-.8-2c0-.3.3-1-.1-2.2 0 0-.7-.2-2.2.8a7.6 7.6 0 0 0-4 0c-1.5-1-2.2-.8-2.2-.8-.4 1.1-.2 2 0 2.1a3 3 0 0 0-.9 2.2c0 3 1.9 3.7 3.6 4-.2.1-.4.5-.5 1-.4.2-1.6.6-2.3-.7 0 0-.4-.7-1.2-.8 0 0-.8 0 0 .5 0 0 .4.2.8 1.2 0 0 .5 1.4 2.7 1v1.4c0 .2-.1.5-.5.4a8 8 0 1 1 5 0z"
+                                    /></svg
+                            ></a>
+    
+                            <a
+                                href="https://www.linkedin.com/in/nureddinhaji"
+                                aria-label="Follow me on Linkedin"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewbox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.7c-1 0-1.8-.8-1.8-1.7s.8-1.8 1.8-1.8S8.3 4 8.3 5s-.8 1.7-1.8 1.7zM20 19h-3v-5.6c0-3.4-4-3.1-4 0V19h-3V8h3v1.8c1.4-2.6 7-2.8 7 2.4V19z"
+                                    /></svg
+                            ></a>
+    
+                            <a
+                                href="https://twitter.com/nureddinhaji"
+                                aria-label="Follow me on Twitter"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewbox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm-.1 9.2a9.3 9.3 0 0 1-14.4 8.3c1.7.2 3.5-.3 4.9-1.3-1.5 0-2.7-1-3.1-2.3h1.5A3.3 3.3 0 0 1 5 10.5c.5.2 1 .4 1.5.4-1.4-1-1.8-3-1-4.4 1.6 2 4 3.3 6.8 3.4A3.3 3.3 0 0 1 18 7c.7-.1 1.4-.4 2-.8-.2.8-.7 1.5-1.4 1.9.7-.1 1.3-.3 1.9-.6-.4.7-1 1.3-1.6 1.7z"
+                                    /></svg
+                            ></a>
+                            <a
+                                href="https://www.facebook.com/nureddinhaji"
+                                aria-label="Follow me on Facebook"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewbox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm-3 7h-2c-.5 0-1 .3-1 .9V9h3l-.2 3H13v8h-3v-8H8V9h2V7c0-2 1-3 3.5-3H16v3z"
+                                    /></svg
+                            ></a>
+                            <a
+                                href="https://t.me/nureddinhaji"
+                                aria-label="Follow me on Telegram"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewbox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M19 24H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h14a5 5 0 0 1 5 5v14a5 5 0 0 1-5 5Zm-2.7-5.1h.7c.2 0 .4-.3.5-.5L20 6.3c0-.2 0-.4-.2-.5a.5.5 0 0 0-.5-.1l-15 5.6c-.2 0-.3.3-.3.5s.2.4.4.5L8 13.4l1.5 4.4c0 .2.2.4.4.4l.6-.1 2-2 3.8 2.8ZM8.9 13l1.1 3.7.3-2.4L17 8.3V8h-.3L9 13Z"
+                                    /></svg
+                            ></a>
+                            <a
+                                href="https://codepen.io/nureddinhaji"
+                                aria-label="Follow me on Codepen"
+                                class="card__link"
+                                ><svg
+                                    class="card__svg"
+                                    viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect height="512" rx="15%" width="512" />
+                                    <g
+                                        fill="none"
+                                        stroke="#e6e6e6"
+                                        stroke-linejoin="round"
+                                        stroke-width="33"
+                                    >
+                                        <path
+                                            d="M81 198v116l175 117 175-117V198L256 81z"
+                                        />
+                                        <path
+                                            d="m81 198 175 116 175-116M256 81v117"
+                                        />
+                                        <path
+                                            d="m81 314 175-116 175 116M256 431V314"
+                                        />
+                                    </g></svg
+                            ></a>
+                        </div>
+                    </footer>
+                </article>
+            </main>
+        </div>
+    </body>
 </html>

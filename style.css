@@ -16,15 +16,181 @@ button {
     background-color: transparent;
     cursor: pointer;
 }
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 html {
     font-size: 62.5%;
 }
+/* End Reset CSS */
 
-/* Global CSS */
-body {
-    font-size: 1.6rem;
+/* Variables */
+
+:root {
+    --main-color: #0b265b;
+    --main-color-low-opacity: rgba(11, 38, 91, 0.06);
+    --submain-color: #e8ebf2;
 }
 
+/* End Variables */
+
+body {
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    --s: 80px;
+    --c1: var(--submain-color);
+    --c2: var(--main-color-low-opacity);
+    --_s: calc(2 * var(--s)) calc(2 * var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%, var(--c2) 68% 70%, #0000 72%;
+    background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s) /
+            var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) /
+            var(--_s),
+        radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s),
+        repeating-conic-gradient(var(--c1) 0 25%, #0000 0 50%) 0 0 / var(--_s),
+        radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s)
+            var(--c1);
+}
+.toggle {
+    display: flex;
+    gap: 1rem;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.lang__label {
+    width: 7rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    position: relative;
+    cursor: pointer;
+}
+.lang__label::before {
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+body:has(.lang__input:checked) .lang__label::before {
+    transform: translateX(4rem);
+}
+body:has(.lang__input:checked) .card--ar {
+    display: flex;
+}
+body:has(.lang__input:checked) .card--en {
+    display: none;
+}
+
+
+main.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--submain-color);
+    max-width: 45rem;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--main-color);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.card--en {
+    font-family: "Dosis", sans-serif;
+}
+.card--ar {
+    font-family: "Changa", sans-serif;
+    display: none;
+}
+.card__header {
+    min-height: 12rem;
+    background: radial-gradient(
+        transparent 29%,
+        var(--main-color) 30%,
+        var(--main-color) 50%,
+        transparent 51%,
+        transparent 74%,
+        var(--main-color) 75%,
+        var(--main-color) 95%,
+        transparent 96%
+    );
+    background-size: 3em 3em;
+    background-color: var(--submain-color);
+    opacity: 1;
+}
+.card__avatar {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    border: 0.7rem solid var(--submain-color);
+}
+.card__body {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: -9rem;
+}
+.card__title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.card__job {
+    font-size: 1.7rem;
+    color: var(--submain-color);
+    background-color: var(--main-color);
+    padding: 0.2rem 1rem;
+    border-radius: 0.5rem;
+}
+.card__description {
+    font-family: "Ubuntu Sans", sans-serif;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+.card--ar .card__description {
+    font-family: "Changa", sans-serif;
+}
+/* Footer Style */
+
+.card__footer {
+    padding: 2rem;
+    border-top: 2px solid var(--main-color);
+}
+.card__links {
+    display: flex;
+    gap: 0 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card__svg {
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: var(--main-color);
+}
+
+/* ---End Footer Style--- */

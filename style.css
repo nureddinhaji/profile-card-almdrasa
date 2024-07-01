@@ -109,7 +109,7 @@ main.cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: var(--submain-color);
+    background: white;
     max-width: 45rem;
     border-radius: 1rem;
     overflow: hidden;
@@ -135,14 +135,14 @@ main.cards {
         transparent 96%
     );
     background-size: 3em 3em;
-    background-color: var(--submain-color);
+    background-color: white;
     opacity: 1;
 }
 .card__avatar {
     width: 14rem;
     height: 14rem;
     border-radius: 50%;
-    border: 0.7rem solid var(--submain-color);
+    border: 0.7rem solid white;
 }
 .card__body {
     padding: 2rem;
